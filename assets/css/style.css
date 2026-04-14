@@ -17,7 +17,7 @@
 html {
     font-family: Manrope, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +49,7 @@ nav li:first-child {
 
 nav a {
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 nav a:hover {
@@ -117,7 +117,7 @@ h2 {
 
 section p {
     margin-top: 1em;
-    font-size: 1.25;
+    font-size: 1.25rem;
 }
 
 footer {
@@ -125,4 +125,50 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Section overrides */
+#work .flex-container,
+#projects .flex-container,
+#certs .flex-container,
+#contact .flex-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#work .text-container,
+#projects .text-container,
+#certs .text-container,
+#contact .text-container {
+    text-align: left;
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+#work h2,
+#projects h2,
+#certs h2,
+#contact h2 {
+    text-align: center;
+}
+
+#work h3,
+#projects h3,
+#certs h3,
+#contact h3 {
+    margin-top: 1.5em;
+}
+
+#work ul,
+#projects ul,
+#certs ul,
+#contact ul {
+    margin: 0.5em 0 0.5em 1.5em;
+}
+
+#work li,
+#projects li,
+#certs li,
+#contact li {
+    margin-bottom: 0.4em;
 }
